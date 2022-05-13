@@ -15,12 +15,12 @@
 
   <%# <><%= pin.image_tag(pin.image) %>
   <div>
-    <%= link_to image_tag(pin.image_as_thumbnail), pin.image %>
+    <%= link_to image_tag(pin.image), pin.image %>
   </div>
   <hr>
 
   <% pin.pictures.each do |p| %>
-    <%= link_to image_tag(p.image), p.image_as_thumbnail %>
+    <%= link_to image_tag(p) %>
   <% end %>
 
 </div>
